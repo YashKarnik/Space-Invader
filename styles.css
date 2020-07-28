@@ -8,17 +8,38 @@ body {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  padding: 2.05rem 0px;
+  padding: 20px 0px;
   opacity: 0.4;
 }
 
 .game-window {
+  position: relative;
   background-color: blue;
   border: 0.5rem dashed #ffffff;
   height: 300px;
+  margin-bottom: 50px;
+}
+
+.game-window p {
+  color: red;
+  display: inline-block;
+  font-size: large;
+  font-weight: lighter;
+}
+
+.btn-up {
+  transform: rotate(-90deg);
+}
+.btn-down {
+  transform: rotate(90deg);
+}
+.btn-left {
+  transform: rotate(180deg);
+}
+
+.btn-rotate-right {
+  transform: scaleX(-1);
 }
 
 .main-container {
@@ -28,15 +49,29 @@ footer {
 }
 .btn {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
   grid-row-gap: 50px;
 }
 
-/* @media (max-width: 980px) {
-  .main-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    grid-row-gap: 50px;
+.start-btn {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: auto;
+  width: 100%;
+}
+.start-btn p {
+  color: black;
+  font-size: 2rem;
+  font-weight: 300px;
+}
+
+#space-ship {
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 780px) {
+  body {
+    padding: 0px 0px;
   }
-} */
+}

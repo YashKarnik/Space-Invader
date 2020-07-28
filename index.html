@@ -7,26 +7,71 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/space-ship.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="styles.css" />
 
-    <title>Space invader</title>
+    <title>Navigation</title>
   </head>
   <body>
-    <p id="main-heading">Space invader</p>
+    <p id="main-heading">Arrown keys to move.'q','e' to rotate</p>
+
     <div class="main-container">
       <div class="game-window">
-        ..
+        <p>hello</p>
+        <img
+          id="space-ship"
+          src="./assets/space-ship.svg"
+          alt="Left"
+          height="50px"
+          width="50px"
+        />
       </div>
     </div>
     <div class="btn">
       <div class="btn-left">
-        <img src="./assets/back.svg" alt="Left" height="100px" width="100px" />
+        <img src="./assets/arrow.svg" alt="Left" height="100px" width="100px" />
       </div>
       <div class="btn-right">
-        <img src="./assets/next.svg" alt="Left" height="100px" width="100px" />
+        <img
+          src="./assets/arrow.svg"
+          alt="Right"
+          height="100px"
+          width="100px"
+        />
+      </div>
+      <div class="btn-up">
+        <img src="./assets/arrow.svg" alt="Up" height="100px" width="100px" />
+      </div>
+      <div class="btn-down">
+        <img src="./assets/arrow.svg" alt="Down" height="100px" width="100px" />
+      </div>
+      <div class="btn-rotate-left">
+        <img
+          src="./assets/loading.svg"
+          alt="Down"
+          height="100px"
+          width="100px"
+        />
+      </div>
+      <div class="btn-rotate-right">
+        <img
+          src="./assets/loading.svg"
+          alt="Down"
+          height="100px"
+          width="100px"
+        />
       </div>
     </div>
-    <!-- <footer>Yash Karnik &COPY;</footer> -->
+    <footer>Yash Karnik</footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </body>
 </html>
