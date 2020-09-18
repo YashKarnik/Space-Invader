@@ -1,2 +1,2 @@
 ## Space Invader
-#### Go to [https://happy-bardeen-a49716.netlify.app](https://happy-bardeen-a49716.netlify.app) for the finished app
+#### Click [here](https://yashkarnik.github.io/Space-Invader/) for the finished app
